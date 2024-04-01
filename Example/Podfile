@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'DDYMax-JSONModel_Example' do
+  pod 'DDYMax-JSONModel', :path => '../'
+
+  target 'DDYMax-JSONModel_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
